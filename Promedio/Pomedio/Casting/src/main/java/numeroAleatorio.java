@@ -8,7 +8,7 @@
  *
  * @author celes
  */
-public class NumeroAleatorio {
+public class numeroAleatorio {
     public static void main (String[] arg){
         int numeroAleatorio =(int)(Math.random()*25+1);
         System.out.println (numeroAleatorio);
