@@ -13,7 +13,7 @@ public class NumeroAleatorio {
         int numeroAleatorio =(int)(Math.random()*25+1);
         System.out.println (numeroAleatorio);
         System.out.println ("\n");
-        int max = 5; 
+        int max = 20; 
         int min = 1; 
         int range = max - min + 1;
         // generate random numbers within 1 to 10 
