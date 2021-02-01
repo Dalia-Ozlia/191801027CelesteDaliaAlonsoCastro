@@ -15,7 +15,7 @@ public class Ejercicio49 {
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         int opcion,mar1=0,mar2=0,i,play1 = 0,play2 = 0;
-        System.out.println("JUEGO PIEDRA, PAPEL O TIJERA.\nJugador uno.");    
+        System.out.println("JUEGO PIEDRA, PAPEL O TIJERA.");    
         for (int j=1;j<=2;j++){
             System.out.println("\nPARTIDA "+j);
             i = 1;
