@@ -10,7 +10,7 @@
  */
 public class testPagos {
     public static void main (String[]arg){
-        Pagos pago1 = new Pagos("Celeste Dalia Alonso Castro", "02/25", 123, 1, 1111222233, 199.99); 
+        Pagos pago1 = new Pagos(1,"OzLia Dalia","Celeste Dalia Alonso Castro", "02/25", 123, 1, 1111222233, 199.99); 
         System.out.print(pago1);
     }
 }

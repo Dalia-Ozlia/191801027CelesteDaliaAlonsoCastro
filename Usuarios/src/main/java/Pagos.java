@@ -8,7 +8,7 @@
  *
  * @author celes
  */
-public class Pagos {
+public class Pagos extends Usuario {
     private String nombre,fechaExpiracion;
     private int cvv,folio;
     private long numero;
@@ -17,18 +17,19 @@ public class Pagos {
     public Pagos() {
     }
 
-    public Pagos(String nombre, String fechaExpiracion, int cvv, int folio, long numero, double total) {
+    public Pagos(int id,String nombreUs, String nombre, String fechaExpiracion, int cvv, int folio, long numero, double total) {
+        super(id, nombreUs);
         this.nombre = nombre;
         this.fechaExpiracion = fechaExpiracion;
         this.cvv = cvv;
-        this.numero = numero;
         this.folio = folio;
+        this.numero = numero;
         this.total = total;
     }
 
     @Override
     public String toString() {
-        return "Pagos{" + "nombre=" + getNombre() + ", fechaExpiracion=" + getFechaExpiracion() + ", cvv=" + getCvv() + ", numero=" + getNumero() + ", folio=" + getFolio() + ", total=" + getTotal() + '}';
+        return "ID Usuario: "+super.getId()+" Nombre Usuario: "+super.getNombreUs()+" Pagos{" + "nombre=" + getNombre() + ", fechaExpiracion=" + getFechaExpiracion() + ", cvv=" + getCvv() + ", folio=" + getFolio() + ", numero=" + getNumero() + ", total=" + getTotal() + '}';
     }
 
     public String getNombre() {
@@ -55,20 +56,20 @@ public class Pagos {
         this.cvv = cvv;
     }
 
-    public double getNumero() {
-        return numero;
-    }
-
-    public void setNumero(long numero) {
-        this.numero = numero;
-    }
-
-    public long getFolio() {
+    public int getFolio() {
         return folio;
     }
 
     public void setFolio(int folio) {
         this.folio = folio;
+    }
+
+    public long getNumero() {
+        return numero;
+    }
+
+    public void setNumero(long numero) {
+        this.numero = numero;
     }
 
     public double getTotal() {
@@ -78,5 +79,4 @@ public class Pagos {
     public void setTotal(double total) {
         this.total = total;
     }
-    
 }

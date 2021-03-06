@@ -10,23 +10,28 @@
  */
 public class Usuario {
     private int id;
-    private String nombre,contraseña,fechaAlta;
+    private String nombreUs,contraseña,fechaAlta;
     private boolean status;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String contraseña, String fechaAlta, boolean status) {
+    public Usuario(int id, String nombreUs, String contraseña, String fechaAlta, boolean status) {
         this.id = id;
-        this.nombre = nombre;
+        this.nombreUs = nombreUs;
         this.contraseña = contraseña;
         this.fechaAlta = fechaAlta;
         this.status = status;
     }
 
+    public Usuario(int id, String nombreUs) {
+        this.id = id;
+        this.nombreUs = nombreUs;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", contrase\u00f1a=" + contraseña + ", fechaAlta=" + fechaAlta + ", status=" + status + '}';
+        return "Usuario{" + "id=" + getId() + ", nombreUs=" + getNombreUs() + ", contrase\u00f1a=" + getContraseña() + ", fechaAlta=" + getFechaAlta() + ", status=" + isStatus() + '}';
     }
 
     public int getId() {
@@ -37,12 +42,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreUs() {
+        return nombreUs;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreUs(String nombreUs) {
+        this.nombreUs = nombreUs;
     }
 
     public String getContraseña() {
